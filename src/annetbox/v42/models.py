@@ -44,6 +44,18 @@ class DeviceIp:
     address: str
     family: IpFamily  # after 4.0 family has new structure, int -> dict
 
+@dataclass
+class L2Vpn(EntityWithSlug):
+    identifier: int
+    type: Label
+    description: str = ""
+
+@dataclass
+class L2VpnTermination:
+    id: int
+    url: str
+    display: str
+    l2vpn: L2Vpn | None = None
 
 @dataclass
 class Circuit:
