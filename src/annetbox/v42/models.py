@@ -55,7 +55,7 @@ class L2VpnTermination:
     id: int
     url: str
     display: str
-    l2vpn: L2Vpn | None = None
+    l2vpn: L2Vpn
 
 @dataclass
 class Circuit:
@@ -105,6 +105,7 @@ class InterfaceMode:
 @dataclass
 class InterfaceVlan(Entity):
     vid: int
+    l2vpn_terminations: L2VpnTermination | None = None
 
 
 @dataclass
@@ -125,6 +126,7 @@ class Interface(Entity):
     created: datetime
     last_updated: datetime
     vrf: Entity | None
+    l2vpn_termintation: L2VpnTermination | None
     mgmt_only: bool
     lag: Entity | None
     mtu: int | None
