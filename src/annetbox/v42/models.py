@@ -105,7 +105,6 @@ class InterfaceMode:
 @dataclass
 class InterfaceVlan(Entity):
     vid: int
-    l2vpn_terminations: L2VpnTermination | None = None
 
 
 @dataclass
