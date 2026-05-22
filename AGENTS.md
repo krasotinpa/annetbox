@@ -4,7 +4,7 @@ This file provides guidance to AI coding agents when working with code in this r
 
 ## Project Overview
 
-Annetbox is a Netbox API client library for Python used by annet and related projects. It implements a subset of Netbox API methods with support for multiple Netbox versions (v24, v37, v41, v42). The library provides both synchronous and asynchronous clients.
+Annetbox is a Netbox API client library for Python used by annet and related projects. It implements a subset of Netbox API methods with support for multiple Netbox versions (v37, v41, v42). The library provides both synchronous and asynchronous clients.
 
 ## Development Commands
 
@@ -92,7 +92,7 @@ python -m build
 ## Code Architecture
 
 ### Version-based Structure
-The codebase is organized by Netbox API versions, each in its own module (`v24/`, `v37/`, `v41/`, `v42/`). Each version module contains:
+The codebase is organized by Netbox API versions, each in its own module (`v37/`, `v41/`, `v42/`). Each version module contains:
 - `models.py` - Dataclass models for API responses/requests
 - `client_async.py` - Async client implementation
 - `client_sync.py` - Sync client (auto-generated from async)
