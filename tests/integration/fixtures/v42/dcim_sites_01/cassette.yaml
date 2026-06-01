@@ -1,0 +1,58 @@
+interactions:
+- request:
+    body: null
+    headers:
+      Accept:
+      - '*/*'
+      Accept-Encoding:
+      - gzip, deflate, zstd
+      Connection:
+      - keep-alive
+      User-Agent:
+      - python-requests/2.33.1
+    method: GET
+    uri: http://localhost:8042/api/dcim/sites/?limit=5&offset=0
+  response:
+    body:
+      string: '{"count":24,"next":"http://localhost:8042/api/dcim/sites/?limit=5&offset=5","previous":null,"results":[{"id":24,"url":"http://localhost:8042/api/dcim/sites/24/","display_url":"http://localhost:8042/dcim/sites/24/","display":"Butler
+        Communications","name":"Butler Communications","slug":"ncsu-128","status":{"value":"active","label":"Active"},"region":{"id":40,"url":"http://localhost:8042/api/dcim/regions/40/","display":"North
+        Carolina","name":"North Carolina","slug":"us-nc","description":"","site_count":0,"_depth":2},"group":null,"tenant":{"id":13,"url":"http://localhost:8042/api/tenancy/tenants/13/","display":"NC
+        State University","name":"NC State University","slug":"nc-state","description":""},"facility":"BUT","time_zone":null,"description":"","physical_address":"3210
+        Faucette Dr., Raleigh, NC 27607","shipping_address":"","latitude":null,"longitude":null,"comments":"","asns":[],"tags":[{"id":7,"url":"http://localhost:8042/api/extras/tags/7/","display_url":"http://localhost:8042/extras/tags/7/","display":"Golf","name":"Golf","slug":"golf","color":"673ab7"},{"id":12,"url":"http://localhost:8042/api/extras/tags/12/","display_url":"http://localhost:8042/extras/tags/12/","display":"Lima","name":"Lima","slug":"lima","color":"009688"},{"id":24,"url":"http://localhost:8042/api/extras/tags/24/","display_url":"http://localhost:8042/extras/tags/24/","display":"X-ray","name":"X-ray","slug":"x-ray","color":"9e9e9e"}],"custom_fields":{},"created":"2021-04-02T00:00:00Z","last_updated":"2021-12-30T15:45:37.371000Z","circuit_count":1,"device_count":2,"prefix_count":0,"rack_count":1,"virtualmachine_count":0,"vlan_count":0},{"id":22,"url":"http://localhost:8042/api/dcim/sites/22/","display_url":"http://localhost:8042/dcim/sites/22/","display":"D.
+        S. Weaver Labs","name":"D. S. Weaver Labs","slug":"ncsu-117","status":{"value":"active","label":"Active"},"region":{"id":40,"url":"http://localhost:8042/api/dcim/regions/40/","display":"North
+        Carolina","name":"North Carolina","slug":"us-nc","description":"","site_count":0,"_depth":2},"group":null,"tenant":{"id":13,"url":"http://localhost:8042/api/tenancy/tenants/13/","display":"NC
+        State University","name":"NC State University","slug":"nc-state","description":""},"facility":"DSW","time_zone":null,"description":"","physical_address":"3110
+        Faucette Dr., Raleigh, NC 27607","shipping_address":"","latitude":null,"longitude":null,"comments":"","asns":[],"tags":[{"id":17,"url":"http://localhost:8042/api/extras/tags/17/","display_url":"http://localhost:8042/extras/tags/17/","display":"Quebec","name":"Quebec","slug":"quebec","color":"cddc39"},{"id":20,"url":"http://localhost:8042/api/extras/tags/20/","display_url":"http://localhost:8042/extras/tags/20/","display":"Tango","name":"Tango","slug":"tango","color":"ff9800"},{"id":24,"url":"http://localhost:8042/api/extras/tags/24/","display_url":"http://localhost:8042/extras/tags/24/","display":"X-ray","name":"X-ray","slug":"x-ray","color":"9e9e9e"}],"custom_fields":{},"created":"2021-04-02T00:00:00Z","last_updated":"2021-12-30T15:45:37.549000Z","circuit_count":1,"device_count":2,"prefix_count":0,"rack_count":1,"virtualmachine_count":0,"vlan_count":0},{"id":2,"url":"http://localhost:8042/api/dcim/sites/2/","display_url":"http://localhost:8042/dcim/sites/2/","display":"DM-Akron","name":"DM-Akron","slug":"dm-akron","status":{"value":"active","label":"Active"},"region":{"id":51,"url":"http://localhost:8042/api/dcim/regions/51/","display":"Ohio","name":"Ohio","slug":"us-oh","description":"","site_count":0,"_depth":2},"group":{"id":2,"url":"http://localhost:8042/api/dcim/site-groups/2/","display":"Branch
+        Offices","name":"Branch Offices","slug":"branch-offices","description":"","site_count":0,"_depth":1},"tenant":{"id":5,"url":"http://localhost:8042/api/tenancy/tenants/5/","display":"Dunder-Mifflin,
+        Inc.","name":"Dunder-Mifflin, Inc.","slug":"dunder-mifflin","description":""},"facility":"","time_zone":null,"description":"","physical_address":"","shipping_address":"","latitude":null,"longitude":null,"comments":"","asns":[],"tags":[{"id":1,"url":"http://localhost:8042/api/extras/tags/1/","display_url":"http://localhost:8042/extras/tags/1/","display":"Alpha","name":"Alpha","slug":"alpha","color":"aa1409"},{"id":2,"url":"http://localhost:8042/api/extras/tags/2/","display_url":"http://localhost:8042/extras/tags/2/","display":"Bravo","name":"Bravo","slug":"bravo","color":"f44336"},{"id":7,"url":"http://localhost:8042/api/extras/tags/7/","display_url":"http://localhost:8042/extras/tags/7/","display":"Golf","name":"Golf","slug":"golf","color":"673ab7"}],"custom_fields":{},"created":"2020-12-19T00:00:00Z","last_updated":"2021-12-30T15:45:37.384000Z","circuit_count":2,"device_count":4,"prefix_count":5,"rack_count":1,"virtualmachine_count":0,"vlan_count":3},{"id":3,"url":"http://localhost:8042/api/dcim/sites/3/","display_url":"http://localhost:8042/dcim/sites/3/","display":"DM-Albany","name":"DM-Albany","slug":"dm-albany","status":{"value":"active","label":"Active"},"region":{"id":43,"url":"http://localhost:8042/api/dcim/regions/43/","display":"New
+        York","name":"New York","slug":"us-ny","description":"","site_count":0,"_depth":2},"group":{"id":2,"url":"http://localhost:8042/api/dcim/site-groups/2/","display":"Branch
+        Offices","name":"Branch Offices","slug":"branch-offices","description":"","site_count":0,"_depth":1},"tenant":{"id":5,"url":"http://localhost:8042/api/tenancy/tenants/5/","display":"Dunder-Mifflin,
+        Inc.","name":"Dunder-Mifflin, Inc.","slug":"dunder-mifflin","description":""},"facility":"","time_zone":null,"description":"","physical_address":"","shipping_address":"","latitude":null,"longitude":null,"comments":"","asns":[],"tags":[{"id":3,"url":"http://localhost:8042/api/extras/tags/3/","display_url":"http://localhost:8042/extras/tags/3/","display":"Charlie","name":"Charlie","slug":"charlie","color":"e91e63"},{"id":14,"url":"http://localhost:8042/api/extras/tags/14/","display_url":"http://localhost:8042/extras/tags/14/","display":"November","name":"November","slug":"november","color":"2f6a31"},{"id":16,"url":"http://localhost:8042/api/extras/tags/16/","display_url":"http://localhost:8042/extras/tags/16/","display":"Papa","name":"Papa","slug":"papa","color":"8bc34a"}],"custom_fields":{},"created":"2020-12-19T00:00:00Z","last_updated":"2021-12-30T15:45:37.397000Z","circuit_count":2,"device_count":4,"prefix_count":5,"rack_count":1,"virtualmachine_count":0,"vlan_count":3},{"id":4,"url":"http://localhost:8042/api/dcim/sites/4/","display_url":"http://localhost:8042/dcim/sites/4/","display":"DM-Binghamton","name":"DM-Binghamton","slug":"dm-binghamton","status":{"value":"active","label":"Active"},"region":{"id":43,"url":"http://localhost:8042/api/dcim/regions/43/","display":"New
+        York","name":"New York","slug":"us-ny","description":"","site_count":0,"_depth":2},"group":{"id":2,"url":"http://localhost:8042/api/dcim/site-groups/2/","display":"Branch
+        Offices","name":"Branch Offices","slug":"branch-offices","description":"","site_count":0,"_depth":1},"tenant":{"id":5,"url":"http://localhost:8042/api/tenancy/tenants/5/","display":"Dunder-Mifflin,
+        Inc.","name":"Dunder-Mifflin, Inc.","slug":"dunder-mifflin","description":""},"facility":"","time_zone":null,"description":"","physical_address":"","shipping_address":"","latitude":null,"longitude":null,"comments":"","asns":[],"tags":[{"id":7,"url":"http://localhost:8042/api/extras/tags/7/","display_url":"http://localhost:8042/extras/tags/7/","display":"Golf","name":"Golf","slug":"golf","color":"673ab7"},{"id":17,"url":"http://localhost:8042/api/extras/tags/17/","display_url":"http://localhost:8042/extras/tags/17/","display":"Quebec","name":"Quebec","slug":"quebec","color":"cddc39"},{"id":18,"url":"http://localhost:8042/api/extras/tags/18/","display_url":"http://localhost:8042/extras/tags/18/","display":"Romeo","name":"Romeo","slug":"romeo","color":"ffeb3b"}],"custom_fields":{},"created":"2020-12-19T00:00:00Z","last_updated":"2021-12-30T15:45:37.409000Z","circuit_count":2,"device_count":4,"prefix_count":5,"rack_count":1,"virtualmachine_count":0,"vlan_count":3}]}'
+    headers:
+      Allow:
+      - GET, POST, PUT, PATCH, DELETE, HEAD, OPTIONS
+      Content-Language:
+      - en
+      Content-Length:
+      - '8095'
+      Content-Type:
+      - application/json
+      Cross-Origin-Opener-Policy:
+      - same-origin
+      Referrer-Policy:
+      - same-origin
+      Server:
+      - Unit/1.34.1
+      Vary:
+      - HX-Request, Accept-Language, Cookie, origin
+      X-Content-Type-Options:
+      - nosniff
+      X-Frame-Options:
+      - SAMEORIGIN
+    status:
+      code: 200
+      message: OK
+version: 1

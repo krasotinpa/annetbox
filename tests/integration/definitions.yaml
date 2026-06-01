@@ -47,6 +47,21 @@ tests:
         args: {limit: 5}
         extract: results[0].id
 
+  - id: dcim_sites_01
+    method: dcim_sites
+    versions: ["v37", "v41", "v42"]
+    args:
+      limit: 5
+
+  - id: dcim_site_01
+    method: dcim_site
+    versions: ["v37", "v41", "v42"]
+    args:
+      site_id: !from_call
+        call: dcim_sites
+        args: {limit: 5}
+        extract: results[0].id
+
   - id: ipam_ip_addresses_01
     method: ipam_ip_addresses
     versions: ["v37", "v41", "v42"]
