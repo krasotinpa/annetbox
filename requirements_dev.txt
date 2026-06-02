@@ -1,4 +1,5 @@
 ruff==0.4.*
+aiohttp<3.14.0  # 3.14.0 removed aiohttp.streams.AsyncStreamReaderMixin which breaks vcrpy
 pytest==8.*
 pytest-asyncio==1.3.*
 vcrpy==8.*
