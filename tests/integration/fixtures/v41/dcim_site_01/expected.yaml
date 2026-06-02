@@ -1,0 +1,30 @@
+# AUTO-GENERATED - DO NOT EDIT
+# This file is generated from definitions.yaml
+# To regenerate: python -m tests.integration.generate_fixtures
+
+definition:
+  id: dcim_site_01
+  method: dcim_site
+  args:
+    site_id:
+      call: dcim_sites
+      args:
+        limit: 5
+      extract: results[0].id
+call:
+  client_call: dcim_site
+  client_call_args: []
+  client_call_kwargs:
+    site_id: 24
+output: !!python/object:annetbox.v41.models.Site
+  id: 24
+  name: Butler Communications
+  display: Butler Communications
+  url: http://localhost:8041/api/dcim/sites/24/
+  slug: ncsu-128
+  status: !!python/object:annetbox.v41.models.Label
+    value: active
+    label: Active
+  custom_fields: {}
+  created: 2021-04-02 00:00:00+00:00
+  last_updated: 2021-12-30 15:45:37.371000+00:00

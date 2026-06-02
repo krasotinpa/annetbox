@@ -21,6 +21,7 @@ from .models import (
     ItemToDelete,
     NewCable,
     Prefix,
+    Site,
     TraceTuple,
     Vlan,
     Vrf,
@@ -200,6 +201,29 @@ class NetboxV42(BaseNetboxClient):
         self,
         device_id: int,
     ) -> Device:
+        pass
+
+    @get("dcim/sites/")
+    async def dcim_sites(
+        self,
+        name: list[str] | None = None,
+        slug: list[str] | None = None,
+        id: list[int] | None = None,
+        region: list[str] | None = None,
+        group: list[str] | None = None,
+        tenant: list[str] | None = None,
+        status: list[str] | None = None,
+        tag: list[str] | None = None,
+        limit: int = 20,
+        offset: int = 0,
+    ) -> PagingResponse[Site]:
+        pass
+
+    dcim_all_sites = collect(dcim_sites)
+    dcim_all_sites_by_id = collect(dcim_sites, field="id")
+
+    @get("dcim/sites/{site_id}/")
+    async def dcim_site(self, site_id: int) -> Site:
         pass
 
     # ipam

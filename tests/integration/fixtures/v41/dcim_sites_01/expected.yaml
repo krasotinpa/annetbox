@@ -1,0 +1,79 @@
+# AUTO-GENERATED - DO NOT EDIT
+# This file is generated from definitions.yaml
+# To regenerate: python -m tests.integration.generate_fixtures
+
+definition:
+  id: dcim_sites_01
+  method: dcim_sites
+  args:
+    limit: 5
+call:
+  client_call: dcim_sites
+  client_call_args: []
+  client_call_kwargs:
+    limit: 5
+output: !!python/object:annetbox.base.models.PagingResponse
+  next: http://localhost:8041/api/dcim/sites/?limit=5&offset=5
+  previous: null
+  count: 24
+  results:
+  - !!python/object:annetbox.v41.models.Site
+    id: 24
+    name: Butler Communications
+    display: Butler Communications
+    url: http://localhost:8041/api/dcim/sites/24/
+    slug: ncsu-128
+    status: !!python/object:annetbox.v41.models.Label
+      value: active
+      label: Active
+    custom_fields: {}
+    created: 2021-04-02 00:00:00+00:00
+    last_updated: 2021-12-30 15:45:37.371000+00:00
+  - !!python/object:annetbox.v41.models.Site
+    id: 22
+    name: D. S. Weaver Labs
+    display: D. S. Weaver Labs
+    url: http://localhost:8041/api/dcim/sites/22/
+    slug: ncsu-117
+    status: !!python/object:annetbox.v41.models.Label
+      value: active
+      label: Active
+    custom_fields: {}
+    created: 2021-04-02 00:00:00+00:00
+    last_updated: 2021-12-30 15:45:37.549000+00:00
+  - !!python/object:annetbox.v41.models.Site
+    id: 2
+    name: DM-Akron
+    display: DM-Akron
+    url: http://localhost:8041/api/dcim/sites/2/
+    slug: dm-akron
+    status: !!python/object:annetbox.v41.models.Label
+      value: active
+      label: Active
+    custom_fields: {}
+    created: 2020-12-19 00:00:00+00:00
+    last_updated: 2021-12-30 15:45:37.384000+00:00
+  - !!python/object:annetbox.v41.models.Site
+    id: 3
+    name: DM-Albany
+    display: DM-Albany
+    url: http://localhost:8041/api/dcim/sites/3/
+    slug: dm-albany
+    status: !!python/object:annetbox.v41.models.Label
+      value: active
+      label: Active
+    custom_fields: {}
+    created: 2020-12-19 00:00:00+00:00
+    last_updated: 2021-12-30 15:45:37.397000+00:00
+  - !!python/object:annetbox.v41.models.Site
+    id: 4
+    name: DM-Binghamton
+    display: DM-Binghamton
+    url: http://localhost:8041/api/dcim/sites/4/
+    slug: dm-binghamton
+    status: !!python/object:annetbox.v41.models.Label
+      value: active
+      label: Active
+    custom_fields: {}
+    created: 2020-12-19 00:00:00+00:00
+    last_updated: 2021-12-30 15:45:37.409000+00:00

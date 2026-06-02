@@ -143,6 +143,15 @@ class ConsolePort(Entity):
 
 
 @dataclass
+class Site(Entity):
+    slug: str
+    status: Label
+    custom_fields: dict[str, Any]
+    created: datetime
+    last_updated: datetime
+
+
+@dataclass
 class Device(Entity):
     url: str
     display: str  # renamed in 3.x from display_name
